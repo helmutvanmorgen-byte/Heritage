@@ -1,0 +1,158 @@
+[
+    {
+        "type_oeuvre": [
+            "bas-relief",
+            "buste colossal"
+        ],
+        "titre": [
+            "Monument aux morts d'alger"
+        ],
+        "attribution_titre": [],
+        "personnage": [
+            "cavalier",
+            "soldat",
+            "vieillard"
+        ],
+        "sculpteur": [],
+        "fondeur": [],
+        "architecte": [],
+        "communes_actuelles": [
+            "Alger-Centre (Alger-Centre) - Département d'Alger"
+        ],
+        "protections": [],
+        "bibliographie": [],
+        "techniques": [
+            "Lottinoplastie",
+            "Galvanoplastie"
+        ],
+        "materiaux": [
+            "Aluminium",
+            "Bois de fer"
+        ],
+        "sources": [],
+        "analogies": [],
+        "expositions": [],
+        "appellation_usage": [],
+        "precisions_auteur": [],
+        "source_representation": [],
+        "description": "",
+        "projet_definitif": "",
+        "inscriptions": "",
+        "marques": "",
+        "historique": "",
+        "notes": "",
+        "id": 1,
+        "oeuvre_localisee": "oui",
+        "dimensions": "",
+        "commune_origine": "",
+        "commande_etat": "inconnu",
+        "proprietaires_actuels": "",
+        "latitude": "36.773409",
+        "longitude": "3.057300",
+        "pays": "Algérie",
+        "departement_france": "06 - Alpes-Maritimes",
+        "wilaya_algerie": "Alger",
+        "commune_ancienne": "Alger",
+        "departement_avant_1962": "91 - Alger",
+        "type_localisation": "Place",
+        "informations_localisation": "Le Pavois",
+        "prix_total_texte": "",
+        "souscription": "",
+        "subvention_commune": "",
+        "subvention_etat": "",
+        "produit_fete": "",
+        "dons_particuliers": "",
+        "dons_entreprises": "",
+        "dons_autres": "",
+        "emprunt": "",
+        "autres_subventions": "",
+        "commentaires_economie": "",
+        "emplacement_edifice": "",
+        "numero_fiche": "REF-2026-95954",
+        "redacteur_notice": "admin",
+        "mentions_legales": "Patrimoine Monumental - 2026",
+        "id_merimee": "",
+        "id_joconde": "",
+        "id_palissy": "",
+        "id_memoire": "",
+        "annee_creation": {
+            "modifier": "le",
+            "date1": "",
+            "date2": ""
+        },
+        "date_commande": {
+            "modifier": "le",
+            "date1": "",
+            "date2": ""
+        },
+        "inauguration": {
+            "modifier": "le",
+            "date1": "1928",
+            "date2": ""
+        },
+        "destruction": {
+            "modifier": "le",
+            "date1": "",
+            "date2": ""
+        },
+        "statut_publication": "publie",
+        "etat_conservation": "",
+        "auteurs_structures": [
+            {
+                "metier": "Architecte",
+                "nom": "Ailler",
+                "a_signe": false,
+                "partie": ""
+            },
+            {
+                "metier": "Fondeur",
+                "nom": "Barbedienne",
+                "a_signe": false,
+                "partie": ""
+            }
+        ],
+        "documentation_zotero": [
+            {
+                "type": "Bibliographie",
+                "titre": "echo d'alger",
+                "auteur": "",
+                "annee": "",
+                "lien_gallica": "https:\/\/gallica.bnf.fr\/ark:\/12148\/bpt6k7582215k\/f1.image.r=(prOx:%20%22alger%22%2010%20%22monument%22)?rk=171674;4",
+                "lien_gallica_iiif": "https:\/\/gallica.bnf.fr\/iiif\/ark:\/12148\/bpt6k7582215k\/f1\/full\/full\/0\/native.jpg",
+                "image_extrait": "IMG_20261121034414_64a42.jpg",
+                "notes": ""
+            }
+        ],
+        "inscriptions_structures": [
+            {
+                "type": "",
+                "contenu": "",
+                "photo": "IMG_20261121034501_ba5b1.jpg"
+            }
+        ],
+        "photos_payload": {
+            "actuelles": [],
+            "maquettes": [
+                {
+                    "titre": "Maquette",
+                    "type_document": "photographie numérique",
+                    "auteur": "Philippe",
+                    "lieu": "-",
+                    "date": "2022",
+                    "description": "-",
+                    "source": "-",
+                    "file": "IMG_20261121034613_e83b2.jpeg"
+                }
+            ],
+            "anciennes": []
+        },
+        "user_id": 1,
+        "date_creation_notice": "21\/11\/2026 à 09:47:36",
+        "date_modification_notice": "21\/11\/2026 à 09:56:27",
+        "deleted_at": null,
+        "images": [],
+        "linked_monuments": [],
+        "historique_versions": [],
+        "propositions": []
+    }
+]

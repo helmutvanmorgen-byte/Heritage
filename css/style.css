@@ -1,0 +1,1032 @@
+/* =========================================================
+   1. DESIGN TOKENS / VARIABLES UNIFIÉES (TRONC COMMUN)
+   ========================================================= */
+:root {
+    /* Couleurs principales & charte */
+    --accent: #289c8e;
+    --accent-hover: #1f7a6f;
+    --primary: #e57368;
+    --primary-hover: #d65a4f;
+    --secondary: #edf2f7;
+    --secondary-hover: #e2e8f0;
+    --warning-accent: #e9bb74;
+
+    /* Couleurs sémantiques */
+    --success: #1b5e20;
+    --success-hover: #144718;
+    --danger: #c53030;
+    --danger-hover: #9b2c2c;
+    --error: var(--danger);
+    --alert-success: #22543d;
+    --alert-error: #822727;
+    --alert-warning: #856404;
+    --alert-info: #0c5460;
+
+    /* Textes, fonds & bordures */
+    --bg: #f4f6f9;
+    --bg-light: #f8fafc;
+    --card-bg: #ffffff;
+    --text-primary: #2d3748;
+    --text-dark: var(--text-primary);
+    --text-secondary: #718096;
+    --text-muted: var(--text-secondary);
+    --text-alt: var(--accent);
+    --border-color: #cbd5e0;
+    --border-light: #e2e8f0;
+    --shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+
+    /* Typographie, rayons & dimensions */
+    --font-sans: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    --radius: 6px;
+    --radius-lg: 8px;
+    --transition-speed: 0.2s;
+    --max-width: 1380px;
+}
+
+/* =========================================================
+   2. BASE / RESET
+   ========================================================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    align-items: stretch;
+    font-family: var(--font-sans);
+    background-color: var(--bg);
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+/* =========================================================
+   3. TYPOGRAPHIE UNIFIÉE
+   ========================================================= */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.35;
+    margin: 0 0 16px 0;
+}
+
+h1 { color: var(--primary); font-size: 1.75rem; }
+h2 { color: var(--accent); font-size: 1.5rem; margin-bottom: 18px; }
+h3 { color: var(--text-primary); font-size: 1.2rem; font-weight: 600; }
+h4 { color: var(--accent); font-size: 1.05rem; font-weight: 600; }
+h5 { color: var(--text-secondary); font-size: 1rem; font-weight: 600; }
+h6 { color: var(--text-secondary); font-size: 0.95rem; font-weight: 500; }
+
+p {
+    color: var(--text-primary);
+    font-size: 0.92rem;
+    line-height: 1.6;
+}
+
+.small-text,
+.text-muted {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+.text-center {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-top: 25px;
+}
+
+a {
+    color: var(--primary);
+    text-decoration: none;
+    transition: border-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--accent);
+    outline: none;
+}
+
+/* =========================================================
+   4. LAYOUT & CONTENEURS COMMUNS
+   ========================================================= */
+main {
+    flex: 1;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 90px auto 0 auto;
+    padding: 1.5rem 2rem;
+}
+
+.container,
+.content-2,
+.content-3 {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 20px auto;
+    padding: 24px;
+    background-color: var(--card-bg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+}
+
+main > .container:first-child,
+main > .content-2:first-child,
+main > .content-3:first-child {
+    margin-top: 0;
+}
+
+/* =========================================================
+   5. HEADER & NAVIGATION UNIFORMISÉS
+   ========================================================= */
+header {
+    background-color: var(--card-bg);
+    backdrop-filter: blur(4px);
+    box-shadow: var(--shadow);
+    border-bottom: 1px solid var(--border-light);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+    padding: 0;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    margin: 0 auto;
+    max-width: var(--max-width);
+    padding: 0.85rem 2rem;
+    width: 100%;
+}
+
+.header-title-wrapper {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header-title {
+    border-bottom: none;
+    color: var(--primary);
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color var(--transition-speed) ease;
+}
+
+.header-title:hover {
+    color: var(--accent);
+}
+
+nav.menu {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1.15rem;
+    margin: 0;
+}
+
+nav.menu a {
+    color: var(--text-primary);
+    text-decoration: none;
+    margin: 0;
+    padding: 4px 0;
+    font-size: 0.9rem;
+    font-weight: 600;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: color var(--transition-speed) ease, border-color var(--transition-speed) ease;
+}
+
+nav.menu a:hover,
+nav.menu a.active {
+    color: var(--accent);
+    border-bottom-color: var(--accent);
+}
+
+.header-user {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-left: 0.25rem;
+    padding-left: 1rem;
+    border-left: 1px solid var(--border-color);
+}
+
+.user-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 10px;
+    background-color: var(--secondary);
+    color: var(--text-secondary);
+    border-radius: 12px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+}
+
+.user-badge strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+nav.menu a.nav-logout {
+    color: var(--danger);
+}
+
+nav.menu a.nav-logout:hover {
+    color: var(--danger-hover);
+    border-bottom-color: var(--danger-hover);
+}
+
+/* =========================================================
+   6. FOOTER
+   ========================================================= */
+footer {
+    background-color: var(--primary);
+    color: var(--card-bg);
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-top: auto;
+    font-size: 0.875rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: var(--max-width);
+    padding: 0 2rem;
+    margin: 0 auto;
+}
+
+/* =========================================================
+   7. BOUTONS UNIFORMISÉS (TRONC COMMUN)
+   ========================================================= */
+button {
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.btn,
+a.btn,
+button.btn,
+.btn-primary,
+.btn-secondary,
+.btn-success,
+.btn-danger {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    gap: 6px;
+    padding: 8px 14px;
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 0.88rem;
+    font-weight: 600;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+    white-space: nowrap;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: background-color var(--transition-speed) ease, border-color var(--transition-speed) ease, color var(--transition-speed) ease, opacity var(--transition-speed) ease;
+}
+
+.btn-primary {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+    background-color: var(--primary-hover);
+    color: #ffffff;
+}
+
+.btn-secondary {
+    background-color: var(--secondary);
+    color: var(--text-primary);
+    border-color: var(--border-color);
+}
+
+.btn-secondary:hover,
+.btn-secondary:focus-visible {
+    background-color: var(--secondary-hover);
+    color: var(--text-primary);
+}
+
+.btn-success {
+    background-color: var(--success);
+    color: #ffffff;
+}
+
+.btn-success:hover,
+.btn-success:focus-visible {
+    background-color: var(--success-hover);
+    color: #ffffff;
+}
+
+.btn-danger {
+    background-color: var(--danger);
+    color: #ffffff;
+}
+
+.btn-danger:hover,
+.btn-danger:focus-visible {
+    background-color: var(--danger-hover);
+    color: #ffffff;
+}
+
+.btn-xs {
+    padding: 4px 9px;
+    font-size: 0.76rem;
+    border-radius: 4px;
+}
+
+.inline-form {
+    display: inline-flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    border: none;
+}
+
+/* =========================================================
+   8. ALERTES & BADGES DE BASE (TRONC COMMUN)
+   ========================================================= */
+.alert {
+    padding: 11px 16px;
+    border-radius: var(--radius);
+    margin-bottom: 18px;
+    font-size: 0.9rem;
+    border: 1px solid transparent;
+    transition: all var(--transition-speed) ease;
+}
+
+.alert-success {
+    background-color: #c6f6d5;
+    color: var(--alert-success);
+    border-color: #9ae6b4;
+}
+
+.alert-danger,
+.alert-error {
+    background-color: #fed7d7;
+    color: var(--alert-error);
+    border-color: #feb2b2;
+}
+
+.badge {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 0.25rem 0.5rem;
+    text-transform: uppercase;
+    border-radius: 3px;
+}
+
+.badge-primary {
+    background-color: var(--primary);
+    color: #ffffff;
+}
+
+.badge-secondary {
+    background-color: var(--accent);
+    color: #ffffff;
+}
+
+/* =========================================================
+   9. FORMULAIRES & FIELDSETS (TRONC COMMUN)
+   ========================================================= */
+fieldset {
+    border: 1px solid var(--border-light);
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    background: var(--card-bg);
+    border-radius: var(--radius);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.02);
+}
+
+legend {
+    font-weight: 600;
+    font-size: 1.05rem;
+    color: var(--accent);
+    background: var(--card-bg);
+    padding: 0.25rem 0.75rem;
+    border: 1px solid var(--border-light);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+fieldset.collapsed > *:not(legend) {
+    display: none;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.form-row > label {
+    width: 190px;
+    min-width: 190px;
+    flex-shrink: 0;
+    font-weight: 600;
+    font-size: 0.88rem;
+    color: var(--text-primary);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="date"],
+input[type="search"],
+input[type="url"],
+select,
+textarea,
+.dynamic-input {
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    font-family: inherit;
+    font-size: 0.9rem;
+    padding: 7px 11px;
+    width: 100%;
+    color: var(--text-primary);
+    background-color: var(--card-bg);
+    transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.form-row input[type="text"],
+.form-row input[type="email"],
+.form-row input[type="password"],
+.form-row input[type="number"],
+.form-row input[type="date"],
+.form-row input[type="search"],
+.form-row input[type="url"],
+.form-row select,
+.form-row textarea,
+.form-row .dynamic-input {
+    flex: 1;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="search"]:focus,
+input[type="url"]:focus,
+select:focus,
+textarea:focus,
+.dynamic-input:focus {
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(40, 156, 142, 0.15);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* =========================================================
+   10. CARTES & GALERIES PUBLIQUES
+   ========================================================= */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 20px;
+}
+
+.card {
+    position: relative;
+    overflow: visible;
+    background-color: var(--card-bg);
+    padding: 1.5rem;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-light);
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: var(--radius);
+    display: block;
+}
+
+#folder-select {
+    display: block;
+    margin-bottom: 1em;
+    padding: 0.4em 0.6em;
+    font-size: 1em;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-bg);
+    border-radius: var(--radius);
+}
+
+#image-gallery,
+.image-preview-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 1em;
+}
+
+.image-preview {
+    position: relative;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    background-color: var(--card-bg);
+    padding: 5px;
+    width: 120px;
+    text-align: center;
+    cursor: grab;
+    transition: border-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+}
+
+.image-preview.primary {
+    border-color: var(--warning-accent);
+    background-color: #fef9e7;
+    box-shadow: 0 0 8px rgba(233, 187, 116, 0.4);
+}
+
+.image-preview img {
+    max-width: 100%;
+    max-height: 100px;
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto 5px auto;
+}
+
+/* =========================================================
+   11. PAGE D'ACCUEIL (INDEX - ATLAS & REGISTRE PATRIMONIAL)
+   ========================================================= */
+main:has(.home-page) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 64px;
+    padding: 1rem 2rem;
+    overflow: hidden;
+}
+
+.home-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 1.15rem;
+    height: calc(100vh - 168px);
+    max-height: calc(100vh - 168px);
+    min-height: 0;
+}
+
+/* 1. Bandeau éditorial compact */
+.atlas-intro {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-left: 5px solid var(--accent);
+    border-radius: var(--radius-lg);
+    padding: 1rem 1.75rem;
+    box-shadow: var(--shadow);
+}
+
+.atlas-intro-main {
+    max-width: 780px;
+}
+
+.atlas-kicker {
+    display: block;
+    font-size: 0.74rem;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.3rem;
+}
+
+.atlas-title {
+    margin: 0 0 0.35rem 0;
+    font-size: 1.65rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text-primary);
+}
+
+.atlas-subtitle {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+}
+
+.atlas-intro-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    min-width: 155px;
+    padding: 0.65rem 1.25rem;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius);
+    text-align: center;
+}
+
+.atlas-stat-number {
+    font-size: 1.65rem;
+    font-weight: 800;
+    line-height: 1.1;
+    color: var(--primary);
+}
+
+.atlas-stat-label {
+    margin-top: 3px;
+    font-size: 0.76rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+/* 2. Espace principal : Carte + Registre */
+.atlas-workspace {
+    flex: 1;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: 1.35fr 1fr;
+    gap: 1.25rem;
+    align-items: stretch;
+}
+
+.atlas-map-card,
+.atlas-register-card {
+    display: flex;
+    flex-direction: column;
+    min-height: 0;
+    height: 100%;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow);
+    overflow: hidden;
+}
+
+.atlas-panel-header {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-bottom: 1px solid var(--border-light);
+    background-color: var(--bg-light);
+}
+
+.atlas-panel-heading h2 {
+    margin: 0;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+.atlas-panel-hint {
+    display: block;
+    font-size: 0.76rem;
+    color: var(--text-secondary);
+    margin-top: 1px;
+}
+
+.atlas-filter-bar {
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0.6rem 1.25rem;
+    border-bottom: 1px solid var(--border-light);
+    background-color: var(--card-bg);
+}
+
+.atlas-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 3px 9px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    background-color: var(--secondary);
+    border: 1px solid var(--border-color);
+    border-radius: 14px;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.atlas-chip:hover,
+.atlas-chip.active {
+    background-color: var(--accent);
+    border-color: var(--accent);
+    color: #ffffff;
+}
+
+.atlas-chip--wilaya {
+    background-color: #fff5f5;
+    border-color: #fed7d7;
+    color: var(--primary-hover);
+}
+
+.atlas-chip--wilaya:hover,
+.atlas-chip--wilaya.active {
+    background-color: var(--primary);
+    border-color: var(--primary);
+    color: #ffffff;
+}
+
+.atlas-map-canvas {
+    flex: 1;
+    width: 100%;
+    min-height: 0;
+    z-index: 1;
+}
+
+/* Liste des notices à droite */
+.atlas-register-list {
+    flex: 1;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem 0;
+}
+
+.atlas-record-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.85rem 1.25rem;
+    border-bottom: 1px solid var(--border-light);
+    text-decoration: none;
+    color: inherit;
+    transition: background-color 0.15s ease;
+}
+
+.atlas-record-item:last-child {
+    border-bottom: none;
+}
+
+.atlas-record-item:hover {
+    background-color: var(--bg-light);
+}
+
+.atlas-record-thumb {
+    width: 72px;
+    height: 72px;
+    flex-shrink: 0;
+    padding: 4px;
+    background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.atlas-record-thumb img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    display: block;
+}
+
+.atlas-record-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.atlas-record-meta {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 4px;
+}
+
+.atlas-record-tag {
+    font-size: 0.74rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.atlas-record-title {
+    margin: 0 0 3px 0;
+    font-size: 0.98rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    line-height: 1.3;
+    transition: color 0.15s ease;
+}
+
+.atlas-record-item:hover .atlas-record-title {
+    color: var(--accent);
+}
+
+.atlas-record-details {
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+}
+
+.atlas-record-arrow {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text-secondary);
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+
+.atlas-record-item:hover .atlas-record-arrow {
+    color: var(--primary);
+    transform: translateX(3px);
+}
+
+.atlas-register-card .empty-state {
+    margin: 1.25rem;
+}
+
+/* Marqueurs Leaflet */
+.custom-pin {
+    background: transparent;
+    border: none;
+}
+
+.custom-pin-inner {
+    width: 22px;
+    height: 22px;
+    background-color: var(--primary);
+    border: 2px solid #ffffff;
+    border-radius: 50% 50% 50% 0;
+    transform: rotate(-45deg);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+    transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.custom-pin-inner:hover {
+    background-color: var(--accent);
+    transform: rotate(-45deg) scale(1.15);
+}
+
+.map-popup-title {
+    display: block;
+    font-size: 0.92rem;
+    color: var(--text-primary);
+}
+
+.map-popup-loc {
+    color: var(--text-secondary);
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+.map-popup-ref {
+    margin-top: 3px;
+}
+
+.leaflet-container a.map-popup-btn,
+a.map-popup-btn {
+    margin-top: 8px;
+    color: #ffffff;
+}
+
+/* =========================================================
+   12. RESPONSIVE GLOBAL
+   ========================================================= */
+@media (max-width: 1180px) {
+    .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.65rem;
+        padding: 0.85rem 1.5rem;
+    }
+
+    nav.menu {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.75rem 1.1rem;
+    }
+
+    .header-user {
+        margin-left: auto;
+        padding-left: 0;
+        border-left: none;
+    }
+
+    main {
+        margin-top: 115px;
+    }
+
+    main:has(.home-page) {
+        margin-top: 105px;
+    }
+
+    .home-page {
+        height: calc(100vh - 208px);
+        max-height: calc(100vh - 208px);
+    }
+}
+
+@media (max-width: 960px) {
+    main:has(.home-page) {
+        overflow: visible;
+    }
+
+    .home-page {
+        height: auto;
+        max-height: none;
+    }
+
+    .atlas-workspace {
+        grid-template-columns: 1fr;
+    }
+
+    .atlas-map-canvas {
+        min-height: 380px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header-user {
+        margin-left: 0;
+        width: 100%;
+        justify-content: space-between;
+        padding-top: 0.5rem;
+        border-top: 1px solid var(--border-light);
+    }
+
+    main {
+        padding: 1rem;
+        margin-top: 165px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 6px;
+    }
+
+    .form-row > label {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .atlas-intro {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem 1.5rem;
+    }
+
+    .atlas-intro-stat {
+        width: 100%;
+        flex-direction: row;
+        gap: 0.65rem;
+    }
+}

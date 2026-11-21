@@ -1,0 +1,678 @@
+[
+    {
+        "nom": "André",
+        "prenom": "",
+        "deleted_at": null,
+        "id": 1
+    },
+    {
+        "nom": "Andro",
+        "prenom": "",
+        "id": 2
+    },
+    {
+        "nom": "Arthus Bertrand",
+        "prenom": "",
+        "id": 3
+    },
+    {
+        "nom": "Atelier de moulage des musées nationaux",
+        "prenom": "",
+        "id": 4
+    },
+    {
+        "nom": "Avoiron & Cie",
+        "prenom": "",
+        "id": 6
+    },
+    {
+        "nom": "Bacqueville, Maison",
+        "prenom": "",
+        "id": 7
+    },
+    {
+        "nom": "Barbedienne",
+        "prenom": "",
+        "id": 8
+    },
+    {
+        "nom": "Bingen et Costenoble",
+        "prenom": "",
+        "id": 9
+    },
+    {
+        "nom": "Bingen, Pierre",
+        "prenom": "",
+        "id": 10
+    },
+    {
+        "nom": "Bisceglia frères",
+        "prenom": "",
+        "id": 11
+    },
+    {
+        "nom": "Blot, Eugène",
+        "prenom": "",
+        "id": 12
+    },
+    {
+        "nom": "Boulenger, Faïencerie Hippolyte",
+        "prenom": "",
+        "id": 13
+    },
+    {
+        "nom": "Brame, Hector",
+        "prenom": "",
+        "id": 14
+    },
+    {
+        "nom": "Brice, Atelier, à Biot",
+        "prenom": "",
+        "id": 15
+    },
+    {
+        "nom": "Bronze artistique de Paris",
+        "prenom": "",
+        "id": 16
+    },
+    {
+        "nom": "Bruno, F.",
+        "prenom": "",
+        "id": 17
+    },
+    {
+        "nom": "Bruyas, A., Faïencerie à Saint-Maurice, Seine",
+        "prenom": "",
+        "id": 18
+    },
+    {
+        "nom": "Busato",
+        "prenom": "",
+        "id": 19
+    },
+    {
+        "nom": "Calla",
+        "prenom": "",
+        "id": 20
+    },
+    {
+        "nom": "Camus, Paris",
+        "prenom": "",
+        "id": 21
+    },
+    {
+        "nom": "Carpeaux, Atelier",
+        "prenom": "",
+        "id": 22
+    },
+    {
+        "nom": "Chantilly, Manufacture de",
+        "prenom": "",
+        "id": 23
+    },
+    {
+        "nom": "Charpentier",
+        "prenom": "",
+        "id": 24
+    },
+    {
+        "nom": "Christofle et Cie",
+        "prenom": "",
+        "id": 25
+    },
+    {
+        "nom": "Clert, Galerie Iris Clert, Paris",
+        "prenom": "",
+        "id": 26
+    },
+    {
+        "nom": "Colin & Cie, E.",
+        "prenom": "",
+        "id": 27
+    },
+    {
+        "nom": "Costenoble",
+        "prenom": "",
+        "id": 28
+    },
+    {
+        "nom": "Coubertin, Fonderie de",
+        "prenom": "",
+        "id": 29
+    },
+    {
+        "nom": "Cresson Edition",
+        "prenom": "",
+        "id": 30
+    },
+    {
+        "nom": "Crozatier, Charles",
+        "prenom": "",
+        "id": 31
+    },
+    {
+        "nom": "Cruet, Paul",
+        "prenom": "",
+        "id": 32
+    },
+    {
+        "nom": "Daubrée, Alfred",
+        "prenom": "",
+        "id": 33
+    },
+    {
+        "nom": "Delafontaine",
+        "prenom": "",
+        "id": 34
+    },
+    {
+        "nom": "Delasalle",
+        "prenom": "",
+        "id": 35
+    },
+    {
+        "nom": "Dellafos (?)",
+        "prenom": "",
+        "id": 36
+    },
+    {
+        "nom": "Denière",
+        "prenom": "",
+        "id": 37
+    },
+    {
+        "nom": "Denonvilliers",
+        "prenom": "",
+        "id": 38
+    },
+    {
+        "nom": "Dihl et Guérhard, ou du duc d'Angoulême, manufacture de porcelaine",
+        "prenom": "",
+        "id": 39
+    },
+    {
+        "nom": "Ducel & Fils, JJ",
+        "prenom": "",
+        "id": 40
+    },
+    {
+        "nom": "Duplan et Salles",
+        "prenom": "",
+        "id": 41
+    },
+    {
+        "nom": "Durenne",
+        "prenom": "",
+        "id": 42
+    },
+    {
+        "nom": "Duval, A.",
+        "prenom": "",
+        "id": 43
+    },
+    {
+        "nom": "Eck et Durand",
+        "prenom": "",
+        "id": 44
+    },
+    {
+        "nom": "Elchinger SA, Céramiques",
+        "prenom": "",
+        "id": 45
+    },
+    {
+        "nom": "Etling, Paris",
+        "prenom": "",
+        "id": 46
+    },
+    {
+        "nom": "Fabrication française Paris",
+        "prenom": "",
+        "id": 47
+    },
+    {
+        "nom": "Fel, J.",
+        "prenom": "",
+        "id": 48
+    },
+    {
+        "nom": "Fonderie Coopérative des Artistes",
+        "prenom": "",
+        "id": 49
+    },
+    {
+        "nom": "Fraisse-Demey, Paris",
+        "prenom": "",
+        "id": 50
+    },
+    {
+        "nom": "Fulda, René, Paris",
+        "prenom": "",
+        "id": 51
+    },
+    {
+        "nom": "Fumière",
+        "prenom": "",
+        "id": 52
+    },
+    {
+        "nom": "Fumière et Gavignot, Paris",
+        "prenom": "",
+        "id": 53
+    },
+    {
+        "nom": "Gasne, Louis",
+        "prenom": "",
+        "id": 54
+    },
+    {
+        "nom": "Gille Jeune",
+        "prenom": "",
+        "id": 55
+    },
+    {
+        "nom": "Giroux, Maison Alph., Paris",
+        "prenom": "",
+        "id": 56
+    },
+    {
+        "nom": "Godard, Amédée",
+        "prenom": "",
+        "id": 57
+    },
+    {
+        "nom": "Godard, E.",
+        "prenom": "",
+        "id": 58
+    },
+    {
+        "nom": "Godard, Florentin",
+        "prenom": "",
+        "id": 59
+    },
+    {
+        "nom": "Gonon",
+        "prenom": "",
+        "id": 60
+    },
+    {
+        "nom": "Gonot, Henri",
+        "prenom": "",
+        "id": 61
+    },
+    {
+        "nom": "Goupil & Cie éditeur",
+        "prenom": "",
+        "id": 62
+    },
+    {
+        "nom": "Goutier & Cie",
+        "prenom": "",
+        "id": 63
+    },
+    {
+        "nom": "Grandhomme-Andro",
+        "prenom": "",
+        "id": 64
+    },
+    {
+        "nom": "Graux-Marly",
+        "prenom": "",
+        "id": 65
+    },
+    {
+        "nom": "Griffoul et Lorge",
+        "prenom": "",
+        "id": 66
+    },
+    {
+        "nom": "Griffoul, Auguste",
+        "prenom": "",
+        "id": 67
+    },
+    {
+        "nom": "Griffoul, Pierre",
+        "prenom": "",
+        "id": 68
+    },
+    {
+        "nom": "Gruet",
+        "prenom": "",
+        "id": 69
+    },
+    {
+        "nom": "Gruet Jeune, Charles-Adolphe",
+        "prenom": "",
+        "id": 70
+    },
+    {
+        "nom": "Gruet Jeune, E., Edmond-Paul",
+        "prenom": "",
+        "id": 71
+    },
+    {
+        "nom": "Gruet aîné, Adolphe",
+        "prenom": "",
+        "id": 72
+    },
+    {
+        "nom": "Hohwiller",
+        "prenom": "",
+        "id": 73
+    },
+    {
+        "nom": "Houdebine",
+        "prenom": "",
+        "id": 74
+    },
+    {
+        "nom": "Hébrard, A.A.",
+        "prenom": "",
+        "id": 75
+    },
+    {
+        "nom": "Jaboeuf Rouard, Paris",
+        "prenom": "",
+        "id": 76
+    },
+    {
+        "nom": "Jaboeuf et Bezout",
+        "prenom": "",
+        "id": 77
+    },
+    {
+        "nom": "Jaboeuf et Cie, Paris",
+        "prenom": "",
+        "id": 78
+    },
+    {
+        "nom": "Janvier-Berchot (Maison), Paris",
+        "prenom": "",
+        "id": 79
+    },
+    {
+        "nom": "La Gerbe d'Or, Paris",
+        "prenom": "",
+        "id": 80
+    },
+    {
+        "nom": "Labroue, E. de ou Delabroue, E.",
+        "prenom": "",
+        "id": 81
+    },
+    {
+        "nom": "Lalique et Cie (René), Wingen-sur-Moder, France",
+        "prenom": "",
+        "id": 82
+    },
+    {
+        "nom": "Le Paute, fabricant de pendule",
+        "prenom": "",
+        "id": 83
+    },
+    {
+        "nom": "Leblanc-Barbedienne",
+        "prenom": "",
+        "id": 84
+    },
+    {
+        "nom": "Marnyhac",
+        "prenom": "",
+        "id": 85
+    },
+    {
+        "nom": "Martin, Louis",
+        "prenom": "",
+        "id": 86
+    },
+    {
+        "nom": "Monduit",
+        "prenom": "",
+        "id": 87
+    },
+    {
+        "nom": "Monnaie de Paris",
+        "prenom": "",
+        "id": 88
+    },
+    {
+        "nom": "Monneron Frères",
+        "prenom": "",
+        "id": 89
+    },
+    {
+        "nom": "Montagutelli Frères, Paris",
+        "prenom": "",
+        "id": 90
+    },
+    {
+        "nom": "Muller, Emile",
+        "prenom": "",
+        "id": 91
+    },
+    {
+        "nom": "Nast, Manufacture de",
+        "prenom": "",
+        "id": 92
+    },
+    {
+        "nom": "Nicot (Etablissements René), Vendeuvre",
+        "prenom": "",
+        "id": 93
+    },
+    {
+        "nom": "Niderviller, faïencerie de",
+        "prenom": "",
+        "id": 94
+    },
+    {
+        "nom": "Paillard, Victor",
+        "prenom": "",
+        "id": 95
+    },
+    {
+        "nom": "Patrouilleau, R.",
+        "prenom": "",
+        "id": 96
+    },
+    {
+        "nom": "Peyrol, H.",
+        "prenom": "",
+        "id": 97
+    },
+    {
+        "nom": "Poussielgue-Rusand",
+        "prenom": "",
+        "id": 98
+    },
+    {
+        "nom": "Puiforcat, Paris",
+        "prenom": "",
+        "id": 99
+    },
+    {
+        "nom": "Quesnel",
+        "prenom": "",
+        "id": 100
+    },
+    {
+        "nom": "Raffl, Maison",
+        "prenom": "",
+        "id": 101
+    },
+    {
+        "nom": "Richard et Quesnel",
+        "prenom": "",
+        "id": 102
+    },
+    {
+        "nom": "Richard frères",
+        "prenom": "",
+        "id": 103
+    },
+    {
+        "nom": "Richard, Louis",
+        "prenom": "",
+        "id": 104
+    },
+    {
+        "nom": "Rouard",
+        "prenom": "",
+        "id": 105
+    },
+    {
+        "nom": "Rouard, Henri",
+        "prenom": "",
+        "id": 106
+    },
+    {
+        "nom": "Rudier",
+        "prenom": "",
+        "id": 107
+    },
+    {
+        "nom": "Rudier, Alexis",
+        "prenom": "",
+        "id": 108
+    },
+    {
+        "nom": "Rudier, Eugène",
+        "prenom": "",
+        "id": 109
+    },
+    {
+        "nom": "Rudier, François",
+        "prenom": "",
+        "id": 110
+    },
+    {
+        "nom": "Rudier, Georges",
+        "prenom": "",
+        "id": 111
+    },
+    {
+        "nom": "Schmoll, E.",
+        "prenom": "",
+        "id": 112
+    },
+    {
+        "nom": "Servant",
+        "prenom": "",
+        "id": 113
+    },
+    {
+        "nom": "Siot",
+        "prenom": "",
+        "id": 114
+    },
+    {
+        "nom": "Siot-Decauville",
+        "prenom": "",
+        "id": 115
+    },
+    {
+        "nom": "Société des Bronzes de Paris",
+        "prenom": "",
+        "id": 116
+    },
+    {
+        "nom": "Sohet, C., & Cie, Paris",
+        "prenom": "",
+        "id": 117
+    },
+    {
+        "nom": "Soleau, E.",
+        "prenom": "",
+        "id": 118
+    },
+    {
+        "nom": "Soyer",
+        "prenom": "",
+        "id": 119
+    },
+    {
+        "nom": "Soyer et Inge",
+        "prenom": "",
+        "id": 120
+    },
+    {
+        "nom": "Susse",
+        "prenom": "",
+        "id": 121
+    },
+    {
+        "nom": "Susse Frères",
+        "prenom": "",
+        "id": 122
+    },
+    {
+        "nom": "Sèvres, Manufacture nationale de",
+        "prenom": "",
+        "id": 123
+    },
+    {
+        "nom": "Thinot",
+        "prenom": "",
+        "id": 124
+    },
+    {
+        "nom": "Thiébaut",
+        "prenom": "",
+        "id": 125
+    },
+    {
+        "nom": "Thiébaut frères, Fumière et Gavignot Successeurs",
+        "prenom": "",
+        "id": 126
+    },
+    {
+        "nom": "Thomire, Pierre-Philippe",
+        "prenom": "",
+        "id": 127
+    },
+    {
+        "nom": "Union artistique de Vaucouleurs",
+        "prenom": "",
+        "id": 128
+    },
+    {
+        "nom": "Val d'Osne",
+        "prenom": "",
+        "id": 129
+    },
+    {
+        "nom": "Valsuani",
+        "prenom": "",
+        "id": 130
+    },
+    {
+        "nom": "Valsuani, A.",
+        "prenom": "",
+        "id": 131
+    },
+    {
+        "nom": "Valsuani, C.",
+        "prenom": "",
+        "id": 132
+    },
+    {
+        "nom": "Varages, Manufacture",
+        "prenom": "",
+        "id": 133
+    },
+    {
+        "nom": "Vincennes, Manufacture de",
+        "prenom": "",
+        "id": 134
+    },
+    {
+        "nom": "Vittoz",
+        "prenom": "",
+        "id": 135
+    },
+    {
+        "nom": "de Braux",
+        "prenom": "",
+        "id": 136
+    }
+]
